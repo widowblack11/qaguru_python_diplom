@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "qaguru-diplom"
+version = "0.1.0"
+description = ""
+authors = ["widowblack11 <oksana.prokopenko16@gmail.com>"]
+readme = "README.md"
+packages = [{include = "qaguru_diplom"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
