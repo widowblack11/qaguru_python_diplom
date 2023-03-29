@@ -1,10 +1,11 @@
-from selene.support.shared import browser
+class SelectDate:
+    def __init__(self, browser):
+        self.browser = browser
 
-
-def select_dates_on_the_calendar(selector, *, year, month, day):
-    browser.element(selector).click()
-    browser.element('.react-datepicker__month-select').click()
-    browser.element(f'[value="{month}"]').click()
-    browser.element('.react-datepicker__year-select').click()
-    browser.element(f'[value="{year}"]').click()
-    browser.element(f'.react-datepicker__day--0{day}').click()
+    def select_dates_on_the_calendar(self, selector, *, year, month, day):
+        self.browser.element(selector).click()
+        self. browser.element('.react-datepicker__month-select').click()
+        self.browser.element(f'[value="{month}"]').click()
+        self. browser.element('.react-datepicker__year-select').click()
+        self. browser.element(f'[value="{year}"]').click()
+        self. browser.element(f'.react-datepicker__day--0{day}').click()
