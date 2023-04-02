@@ -50,7 +50,7 @@
 ![This is an image](images/report3.jpg)
 
 ##### Видео прохождение теста
-![This is an image](images/video.mp4)
+![This is an image](images/video.gif)
 
 
 <!-- Allure TestOps -->
